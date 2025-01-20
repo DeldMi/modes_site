@@ -1,0 +1,117 @@
+/* Dark theme foundation */
+:root {
+    --dark-bg: #1a1a1a;
+    --dark-text: #e0e0e0;
+    --dark-accent: #2d2d2d;
+    --dark-border: #404040;
+    --dark-primary: #4a9eff;
+    --dark-hover: #333333;
+    --dark-disabled: #666666;
+}
+
+/* Base theme overrides */
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* Containers and cards */
+.container, 
+.card, 
+.panel {
+    background-color: var(--dark-accent);
+    border-color: var(--dark-border);
+}
+
+/* Form elements */
+input, 
+select, 
+textarea {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--dark-primary);
+    outline: none;
+}
+
+/* Buttons */
+button,
+.button {
+    background-color: var(--dark-primary);
+    color: var(--dark-text);
+    border: none;
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--dark-hover);
+}
+
+button:disabled,
+.button:disabled {
+    background-color: var(--dark-disabled);
+}
+
+/* Links */
+a {
+    color: var(--dark-primary);
+}
+
+a:hover {
+    color: var(--dark-text);
+}
+
+/* Tables */
+table {
+    border-color: var(--dark-border);
+}
+
+th, td {
+    border-color: var(--dark-border);
+}
+
+tr:nth-child(even) {
+    background-color: var(--dark-accent);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--dark-accent);
+    border-color: var(--dark-border);
+}
+
+/* Status indicators */
+.success {
+    color: #4caf50;
+}
+
+.warning {
+    color: #ff9800;
+}
+
+.error {
+    color: #f44336;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-hover);
+}
